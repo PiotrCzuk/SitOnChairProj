@@ -1,0 +1,33 @@
+$main_color: #24BA9F;
+
+@import "partials/header.scss";
+@import "partials/slider.scss";
+@import "partials/application";
+@import "partials/showcase";
+@import "partials/form2.scss";
+@import "partials/prices.scss";
+@import "partials/footer.scss";
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0 5px;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway, Haletica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
