@@ -1,65 +1,41 @@
 header {
   background-color: black;
   height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  float: left;
-  color: white;
-  text-transform: uppercase;
-  padding-top: 15px;
-  padding-left: 40px;
-  font-weight: 900;
-}
 
-.logo span {
-  color: $main_color;
-}
-
-nav ul{
+.header_nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  padding-top: 15px;
-  float: right;
-
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-nav > ul > li {
-  float: left;
-  position: relative;
-  text-transform: uppercase;
-}
-
-nav > ul > li > ul {
-  position: absolute;
-  display: none;
-  padding-top: 10px;
-  text-transform: none;
-}
-
-
-nav > ul >li > ul > li {
-  background-color: black;
-}
-nav > ul > li > ul > li > a {
-  padding: 10px;
-}
-
-nav > ul > li:hover ul{
-  display: block;
-}
-
-nav > ul > li > ul:before {
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  margin-left: 50%;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+  height: 100%;
+  width: 100%;
+  li{
+    text-transform: uppercase;
+    padding-left: 25px;
+    ul{
+      display: none;
+      background-color: black;
+    }
+    &:last-child {
+      padding-right: 80px;
+    }
+    &:first-child {
+      margin-right: auto;
+      padding-left: 60px;
+      span{
+        color: #24ba9f;
+      }
+    }
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
 }

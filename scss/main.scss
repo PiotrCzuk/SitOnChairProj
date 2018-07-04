@@ -1,14 +1,4 @@
-$main_color: #24BA9F;
-
-@import "partials/header.scss";
-@import "partials/slider.scss";
-@import "partials/application";
-@import "partials/showcase";
-@import "partials/form2.scss";
-@import "partials/prices.scss";
-@import "partials/footer.scss";
-
-
+@import "partials/header";
 
 * {
   box-sizing: border-box;
@@ -17,17 +7,12 @@ $main_color: #24BA9F;
 }
 
 body {
-  font-family: Raleway, Haletica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
-/*
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}*/
