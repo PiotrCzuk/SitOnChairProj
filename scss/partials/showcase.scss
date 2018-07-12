@@ -1,6 +1,10 @@
-.showcase_div {
+.showcase {
   height: 350px;
+}
+
+.showcase_div {
   display: flex;
+  height: 100%;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 25px;
@@ -15,5 +19,36 @@
       &:nth-child(2) {
         background-image: url("../images/box2_img.jpg");
       }
+      h2 {
+        &:after {
+          content: "";
+          background-color: #24baa0;
+          width: 200px;
+          height: 6px;
+          display: block;
+          margin: 5px 0 5px 0;
+        }
+      }
     }
+}
+
+
+.showcase_p{
+  margin-top: 150px;
+  margin-left: 0;
+  width: 100%;
+  padding: 14px;
+  display: block;
+  background-color: rgba(255,255,255,0.5);
+  font-weight: bold;
+  transition: 0.6s;
+  &:after{
+    content: "";
+    background-color: #24baa0;
+    width: 200px;
+    height: 6px;
+    display: block;
+    margin: 5px 0 5px 0;
+
+  }
 }

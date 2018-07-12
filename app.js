@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Slider functionality
 
-    var prevPicture = document.getElementById('prevPicture');
+    var prevPicture = document.getElementById("prevPicture");
     var nextPicture = document.getElementById("nextPicture");
     var li_elements = document.querySelectorAll(".slider > div> ul > li");
 
@@ -32,10 +32,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         li_elements[pic_index].style.left = "0";
         li_elements[pic_index].classList.add("visible");
-    }
+    };
 
     prevPicture.addEventListener("click", moveSlideLeft);
     nextPicture.addEventListener("click", moveSlideRight);
+
+
+
+    //On Hover show only picture
+    const showcaseP = document.querySelectorAll(".showcase_p");
+
+    for(let element of showcaseP){
+        element.addEventListener("mouseover", function () {
+            this.style.opacity = 0;
+        });
+        element.addEventListener("mouseout", function () {
+            this.style.opacity = 1;
+        })
+    }
+
 
 
     // On click plans functionality change colors
