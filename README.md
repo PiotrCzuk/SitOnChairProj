@@ -1,3 +1,6 @@
 # SitOnChairProj
-My first web project
-## This will be updated weekly with new ideas and things I will learn during the course. 
+My first web project, using JavaScript, SASS/Gulp and HTML5.
+
+[Click to see how it looks](https://piotrczuk.github.io/SitOnChairProj/.)
+
+
