@@ -10,6 +10,15 @@
     width: 100%;
     h2 {
       margin: 48px 0 0 0;
+      text-transform: uppercase;
+      &:after{
+        content: "";
+        background-color: #24baa0;
+        width: 330px;
+        height: 6px;
+        display: block;
+        margin: 5px 0 5px 0;
+      }
     }
   }
   .plans-options {
@@ -91,6 +100,9 @@
           line-height: 43px;
           height: 43px;
           text-align: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
           &:nth-child(odd) {
             line-height: 44px;
             height: 44px;
